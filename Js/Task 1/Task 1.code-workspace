@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Lab-task/Lab-9"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Task 1"
+	}
+}
