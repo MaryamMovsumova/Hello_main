@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../practice/js"
+		},
+		{
+			"path": "../../../Lab-task/Lab-9"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Task 2"
+	}
+}
