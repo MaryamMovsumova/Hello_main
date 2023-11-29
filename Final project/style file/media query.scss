@@ -1,0 +1,193 @@
+@import"./_variable";
+@import"./_functions";
+
+//STARTED HEADER SECTION RESPONSIVE// -->
+
+@media screen and (max-width:992px) {
+
+    .wrapper {
+        margin: 0rem 0.5rem;
+        padding: 0rem 0.5rem;
+    }
+
+    .header_logo_title {
+        font-size: 1.1rem;
+    }
+
+    .header_nav {
+        display: none;
+    }
+
+    .header_buttons {
+        display: none;
+    }
+
+    .header_menu_icon {
+        display: block;
+        font-size: 1.1rem;
+    }
+
+}
+
+//STARTED BANNER SECTION RESPONSIVE// -->
+
+@media screen and (max-width:992px) {
+
+    .banner {
+        width: 100%;
+        height: px-to-rem(197px);
+        background-image: url(../image/Rectangle\ 8.png);
+    }
+
+    .banner_text {
+        align-self: center;
+        text-align: center;
+
+
+        &_title {
+            font-size: px-to-rem(14px);
+            font-weight: 400;
+            color: white;
+            margin-bottom: 1.25rem;
+
+        }
+
+        &_item {
+            padding: 0.5rem 1.25rem;
+            border-radius: 0.5rem;
+            border: none;
+            background-color: #FA8F45;
+            color: white;
+            font-size: px-to-rem(16px);
+            font-weight: 400;
+        }
+    }
+
+}
+
+//STARTED CATEGORIES SECTION RESPONSIVE// -->
+
+@media screen and (max-width:992px) {
+    .wrapper {
+        margin: 0rem 0.5rem;
+        padding: 0rem 0.5rem;
+    }
+
+    .categories {
+        height: px-to-rem(404px);
+        margin-top: px-to-rem(44px);
+
+        &_card {
+            width: 100%;
+            height: px-to-rem(360px);
+        }
+
+        &_title {
+            font-size: px-to-rem(18px);
+            text-align: center;
+        }
+
+        .categories_card_box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+
+
+
+            &_img {
+                border: 2px solid red;
+                width: 100%;
+                height: px-to-rem(78px);
+            }
+
+
+        }
+    }
+}
+
+//STARTED VOLUNTEERS SECTION RESPONSIVE// -->
+
+@media screen and (max-width:992px) {
+    .wrapper {
+        margin: 0rem 0.5rem;
+        padding: 0rem 0.5rem;
+    }
+
+    .volunteers {
+        width: 100%;
+        height: px-to-rem(480px);
+        margin-top: px-to-rem(44px);
+
+        &_title {
+            font-size: px-to-rem(18px);
+            font-weight: 500;
+            color: $color-grey;
+            margin-bottom: px-to-rem(16px);
+            text-align: center;
+        }
+
+        &_card {
+            width: 100%;
+            height: px-to-rem(436px);
+            display: grid;
+            grid-template-columns: repeat(2, px-to-rem(156px));
+            grid-template-rows: repeat(2, px-to-rem(132px));
+            column-gap: px-to-rem(16px);
+            row-gap: px-to-rem(12px);
+
+            &_box {
+                width: px-to-rem(156px);
+                height: px-to-rem(132px);
+                border: 1px solid #C2C6CE;
+                border-radius: px-to-rem(8px);
+                text-align: center;
+
+                &_img {
+                    width: px-to-rem(32px);
+                    height: px-to-rem(28px);
+                    margin-bottom: px-to-rem(56px);
+                    margin-top: px-to-rem(24px);
+                }
+
+                &_title {
+                    font-size: px-to-rem(12px);
+                    font-weight: 500;
+                    color: $color-grey;
+                    margin-bottom: px-to-rem(24px);
+                }
+
+                &_info {
+                    display: none;
+                }
+
+                &_text {
+                    font-size: px-to-rem(12px);
+                    font-weight: 600;
+                    color: $color-grey;
+                    margin-top: 0;
+                }
+
+                &_item {
+                    display: none;
+                }
+
+                &_btn {
+                    padding: 0.5rem 0.75rem;
+                    background-color: #C9EAEF;
+                    border-radius: px-to-rem(8px);
+                    border: none;
+                    font-size: px-to-rem(12px);
+                    color: $color-grey;
+                    font-weight: 400;
+                    margin-top: 0;
+
+                }
+
+            }
+
+        }
+
+
+    }
+}

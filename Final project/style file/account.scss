@@ -1,0 +1,317 @@
+@import"./_functions";
+@import"./_variable";
+@import"./media\ query.scss";
+@import"./_mixin";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    font-size: 16px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+//STARTED ACCOUNT HEADER SECTION// -->
+header {
+    background-color: #F0F1F3;
+    width: 100%;
+    height: 68px;
+}
+
+.wrapper {
+    margin: 0 50px;
+    padding: 0 50px;
+}
+
+.header_helper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 0rem;
+
+    .header_logo {
+        &_title {
+            font-size: 1.25rem;
+            color: #2A5055;
+        }
+    }
+}
+
+.header_menu_icon {
+    display: none;
+}
+
+//STARTED ACCOUNT SECTION// -->
+
+.account_card {
+    width: 100%;
+    height: px-to-rem(1094px);
+    display: flex;
+    position: relative;
+
+
+
+    &_form {
+        width: px-to-rem(392px);
+        height: px-to-rem(700px);
+        position: absolute;
+        left: px-to-rem(200px);
+        top: px-to-rem(150px);
+
+        &_title {
+            font-size: px-to-rem(32px);
+            font-weight: 500;
+        }
+
+        &_box {
+            width: 100%;
+            height: px-to-rem(700px);
+            display: flex;
+            // border: 2px solid blue;
+            flex-direction: column;
+            gap: px-to-rem(10px);
+            margin-top: px-to-rem(30px);
+
+
+            &_input {
+                width: 100%;
+                height: px-to-rem(50px);
+                padding: 0.75rem 1.25rem;
+                border-radius: px-to-rem(8px);
+
+                &_info {
+                    font-size: px-to-rem(12px);
+                    font-weight: 300;
+                    color: #667085;
+                }
+            }
+
+            &_password {
+                position: relative;
+
+                &_input {
+                    width: 100%;
+                    height: px-to-rem(50px);
+                    padding: 0.75rem 1.25rem;
+                    border-radius: px-to-rem(8px);
+
+                    &_info {
+                        font-size: px-to-rem(12px);
+                        font-weight: 300;
+                        color: #667085;
+                        margin-top: px-to-rem(5px);
+                    }
+
+                    &_icon {
+                        position: absolute;
+                        right: px-to-rem(20px);
+                        top: px-to-rem(17px);
+                        color: #667085;
+                        font-size: px-to-rem(15px);
+                    }
+                }
+            }
+
+            &_btn {
+                position: relative;
+
+                &_design {
+                    width: 100%;
+                    height: px-to-rem(50px);
+                    padding: 0.75rem 1.25rem;
+                    border-radius: px-to-rem(8px);
+                    border: none;
+                    background-color: #2A5055;
+                    color: white;
+                    font-size: px-to-rem(17px);
+                    font-weight: 500;
+                    margin-top: px-to-rem(24px);
+                    margin-bottom: px-to-rem(24px);
+                }
+
+                &_design:nth-child(3) {
+                    background-color: transparent;
+                    border: 1px solid $color-grey;
+                    color: #334155;
+                }
+
+                &_design:nth-child(5) {
+                    background-color: #0C63D4;
+                    border: 1px solid #0C63D4;
+                    color: white;
+                    margin-top: px-to-rem(5px);
+                }
+
+                &_info {
+                    font-size: px-to-rem(14px);
+                    font-weight: 300;
+                    color: black;
+                    text-align: center;
+                }
+
+                &_item {
+                    font-size: px-to-rem(18px);
+                    font-weight: 500;
+                    color: #475467;
+                    text-align: center;
+                    margin-left: 50%;
+
+                }
+
+                &_icon_1 {
+                    position: absolute;
+                    left: px-to-rem(95px);
+                    bottom: px-to-rem(135px);
+                }
+
+                &_icon_2 {
+                    position: absolute;
+                    left: px-to-rem(80px);
+                    bottom: px-to-rem(55px);
+                }
+            }
+
+
+        }
+
+    }
+
+    .account_card_img {
+        max-height: 100%;
+        position: absolute;
+        right: 0;
+    }
+}
+
+
+//STARTED FOOTER SECTION// -->
+
+footer {
+    width: 100%;
+    height: px-to-rem(466px);
+    margin-top: px-to-rem(90px);
+    border: 1px solid #E0E2E7;
+
+    .footer_box {
+        width: 100%;
+        height: px-to-rem(376px);
+        display: flex;
+        align-items: center;
+
+        .footer_card {
+            width: 100%;
+            height: px-to-rem(228px);
+            display: flex;
+            column-gap: 128px;
+            position: relative;
+
+
+            .footer_card_nav {
+
+
+                &_nav_title {
+                    font-size: px-to-rem(24px);
+                    font-weight: 600;
+                    color: $color-grey;
+                    padding-bottom: px-to-rem(16px);
+
+                }
+            }
+
+            .footer_card_nav_menu {
+                &_item {
+                    padding-top: px-to-rem(20px);
+                }
+
+                &_item_link {
+                    font-size: px-to-rem(16px);
+                    font-weight: 400;
+                    color: $color-grey;
+                }
+            }
+
+            &_email {
+                width: px-to-rem(365px);
+                height: px-to-rem(48px);
+                position: absolute;
+                padding-left: px-to-rem(15px);
+                bottom: 0;
+                right: 0;
+
+
+                &_box {
+                    width: px-to-rem(243px);
+                    height: px-to-rem(48px);
+                    border-radius: px-to-rem(8px);
+                    border: 1px solid #A3A9B6;
+                }
+
+                &_btn {
+                    padding: 0.75rem 1.25rem;
+                    border-radius: 0.5rem;
+                    border: none;
+                    background-color: #FA8F45;
+                    color: white;
+                    font-size: px-to-rem(14px);
+                    font-weight: 400;
+                }
+            }
+
+
+        }
+
+    }
+}
+.footer_box_contact_card {
+    border-top: 1px solid #E0E2E7;
+    
+    .footer_box_contact {
+        width: 100%;
+        height: px-to-rem(86px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_nav {
+            width: px-to-rem(315px);
+            height: px-to-rem(24px);
+
+            &_menu {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &_menu_item_link {
+                font-size: px-to-rem(14px);
+                font-weight: 400;
+                color: #000000;
+            }
+
+        }
+
+        &_icon {
+            width: px-to-rem(186px);
+            height: px-to-rem(24px);
+            display: flex;
+            justify-content: space-between;
+
+            &_st {
+                font-size: px-to-rem(24px);
+                color: #98A2B3;
+            }
+        }
+    }
+}

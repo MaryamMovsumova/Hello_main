@@ -1,0 +1,6 @@
+@mixin pb_color_style($w, $h, $border_r, $bcolor){
+width: $w;
+height: $h;
+border-radius:$border_r;
+background-color:$bcolor;
+}
