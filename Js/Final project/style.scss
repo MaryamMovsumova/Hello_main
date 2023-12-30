@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background-color: #F9F9E0;
+}
+
+.wrapper {
+    margin: 0 30px;
+    padding: 0 30px;
+}
+
+header {
+    width: 100%;
+    height: 210px;
+}
+
+.header_first_bar {
+    height: 60px;
+    background-color: #FF90BC;
+    position: relative;
+
+    .header_first_card {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+
+        .header_logo {
+            width: 300px;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &_icon {
+                width: 90px;
+                height: 90px;
+            }
+
+            &_text {
+                font-size: 22px;
+                color: white;
+            }
+        }
+
+        .header_menu {
+            width: 900px;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .header_menu_nav {
+                display: flex;
+                gap: 30px;
+
+                .header_menu_link {
+                    font-size: 20px;
+                    color: white;
+                }
+            }
+
+            &_text {
+                font-size: 18px;
+                color: lightgray;
+            }
+
+
+        }
+
+    }
+
+    .basket {
+        width: 400px;
+        height: max-content;
+        border: 1px solid #8ACDD7;
+        background-color: #F9F9E0;
+        position: absolute;
+        right: 0;
+        z-index: 10;
+        display: none;
+
+        &_icon {
+            font-size: 25px;
+            color: #FF90BC;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+
+        &_title {
+            font-size: 28px;
+            color: #8ACDD7;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .container {
+            margin: 0 20px;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+
+            .basket_count {
+                width: 100%;
+                height: 80px;
+                margin-top: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &_box {
+                    width: 80px;
+                    height: 80px;
+                    border: 1px solid #8ACDD7;
+                }
+            }
+
+            .basket_count_item {
+                width: max-content;
+                height: max-content;
+                display: flex;
+                gap: 20px;
+            }
+
+            .basket_btn {
+                width: 100%;
+                height: max-content;
+
+                &_box {
+                    width: 100%;
+                    height: max-content;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 30px;
+
+                    .basket_btn_text {
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: #8ACDD7;
+                    }
+                }
+
+                .basket_button {
+                    width: 100%;
+                    height: 50px;
+                    border: none;
+                    border-radius: 10px;
+                    background-color: #FF90BC;
+                    color: #F9F9E0;
+                    font-size: 20px;
+                    text-align: center;
+                    margin-top: 10px;
+                }
+
+                .basket_button:hover {
+                    cursor: pointer;
+                    background-color: transparent;
+                    color: #FF90BC;
+                    border: 1px solid #FF90BC;
+                }
+            }
+        }
+
+        .basket_active {
+            right: 0;
+            transition: 0.5s;
+            display: block;
+        }
+
+
+    }
+}
+
+
+
+.header_second_bar {
+    width: 100%;
+    height: 90px;
+
+    .header_second_card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+
+        &_input {
+            width: 800px;
+            height: 50px;
+            border-radius: 10px;
+            border: 2px solid #8ACDD7;
+        }
+
+        &_btn {
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            border: 1px solid white;
+            background-color: #8ACDD7;
+            color: white;
+            font-size: 16px;
+        }
+
+        .wish_list {
+            width: 300px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+
+            &_box {
+                width: 100px;
+                height: 50px;
+                text-align: center;
+                position: relative;
+
+                &_icon {
+                    font-size: 25px;
+                    color: #8ACDD7;
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                }
+
+                &_text {
+                    font-size: 12px;
+                    color: #FF90BC;
+                }
+
+                &_num {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    border: 1px solid #FF90BC;
+                    background-color: #FFC0D9;
+                    position: absolute;
+                    right: 30px;
+                    top: 15px;
+                    font-size: 16px;
+                    color: #F9F9E0;
+                    display: none;
+                }
+
+                .num_active{
+                    display: block;
+                }
+            }
+        }
+
+    }
+
+
+
+}
+
+
+.header_third_bar {
+    width: 100%;
+    height: 60px;
+    background-color: #FFC0D9;
+
+    .header_third_card {
+        display: flex;
+        justify-content: space-between;
+
+        .catalogue_box {
+            width: 250px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            &_img {
+                width: 50px;
+                height: 50px;
+            }
+
+            &_text {
+                font-size: 16px;
+                font-weight: 600;
+                color: white;
+            }
+        }
+    }
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_page {
+        width: 750px;
+        height: 340px;
+
+        &_img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.brand_section {
+    width: 100%;
+    height: 85px;
+
+    .brand_card {
+        height: 85px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+
+        &_box {
+            width: 75px;
+            height: 75px;
+            border: 3px solid #FF90BC;
+            border-radius: 50%;
+
+
+            &_img {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+
+
+    }
+}
+
+.products {
+    width: 100%;
+    height: max-content;
+
+
+    .products_card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .products_box {
+            width: 320px;
+            height: 400px;
+            border: 2px solid #FF90BC;
+            background-color: white;
+            border-radius: 20px;
+            margin-top: 50px;
+            position: relative;
+
+            &_img {
+                width: 210px;
+                height: 210px;
+                margin-left: 60px;
+                margin-top: 20px;
+            }
+
+            &_sale {
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                border: 3px solid #8ACDD7;
+                background-color: #FF90BC;
+                position: absolute;
+                top: 50px;
+                left: 3px;
+                font-size: 14px;
+                text-align: center;
+                color: white;
+                padding-top: 25px;
+
+            }
+
+            &_title {
+                font-size: 18px;
+                color: #FF90BC;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            &_price {
+                font-size: 18px;
+                color: #FFC0D9;
+                text-align: end;
+                margin-right: 20px;
+                margin-bottom: 10px;
+            }
+
+            &_btn {
+                width: 280px;
+                height: 40px;
+                border-radius: 8px;
+                border: 1px solid #8ACDD7;
+                background-color: #8ACDD7;
+                color: white;
+                font-size: 18px;
+                margin-left: 20px;
+            }
+
+            &_btn:hover {
+                cursor: pointer;
+                background-color: transparent;
+                color: #8ACDD7;
+            }
+
+        }
+
+        .products_box:hover {
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+        }
+    }
+
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #8ACDD7;
+    background-color: #8ACDD7;
+    margin-top: 50px;
+
+    .footer_box_contact {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_icon {
+            width: 186px;
+            height: 24px;
+            display: flex;
+            justify-content: space-between;
+
+            &_st {
+                font-size: 24px;
+                color: white;
+            }
+        }
+    }
+
+}
