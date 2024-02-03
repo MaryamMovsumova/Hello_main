@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_logo {
+        font-size: 32px;
+        font-weight: 600;
+        color: #67729D;
+    }
+
+    &_nav {
+        display: flex;
+        gap: 10px;
+
+        &_list {
+
+            &_item {
+                font-size: 20px;
+                color: #BB9CC0;
+            }
+        }
+    }
+
+    &_icon_box {
+        display: flex;
+        gap: 25px;
+
+        .header_icon {
+            font-size: 30px;
+            color: #E7BCDE;
+            cursor: pointer;
+        }
+
+        .header_avatar{
+            font-size: 30px; 
+            color: #E7BCDE;
+            cursor: pointer;
+        }
+    }
+}
